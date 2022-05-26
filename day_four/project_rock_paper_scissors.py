@@ -33,7 +33,7 @@ choices = [rock, paper, scissors]
 #Write your code below this line 👇
 users_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors "))
 
-if users_choice > 2:
+if users_choice > 2 or users_choice < 0:
     print("That is an invalid number!")
 else:
     opponents_choice = random.randint(0, 2)
